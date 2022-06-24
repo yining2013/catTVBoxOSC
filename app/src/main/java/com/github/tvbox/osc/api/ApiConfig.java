@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     private void loadConfigServer(LoadConfigCallback callback, Activity activity) {
-        OkGo.<String>get(Hawk.get(HawkConfig.API_URL, ""))
+        OkGo.<String>get(Hawk.get(HawkConfig.API_URL, "http://101.34.74.248/1.json"))
                 .execute(new AbsCallback<String>() {
                     @Override
                     public void onSuccess(Response<String> response) {
